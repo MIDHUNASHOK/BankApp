@@ -1,0 +1,87 @@
+                            angular basic-commands
+
+
+
+            1. to create a project : ng new project-name
+            2. to run a project : ng serve --open
+            3. to create a component : ng g c component-name
+            4. to create a service- ng g s service_name
+
+                            angular building blocks
+
+            1.module : to import liabraries/root module- appmodule
+            2.component:-{html,css,ts}-root component -appcomponent
+
+                             
+                             3.data binding
+            
+            sharing data within a component
+                
+                3.1 ONE WAY BINDING
+                 3.1.1 component to view
+
+                 a. string interpolation-syntax:  {{expression}}
+                 b. property binding-syntax: [target-property]="sourse-property"
+                         
+
+                 3.1.2view to component
+                
+                 a. event binding-syntax: (event-name)="function call"
+                 b. template referencing variable -syntax: #variablename 
+                                act as getElementbyid
+
+
+
+                                (change)="acnoChange($event)"
+                                (change)="pswdChange($event)"
+
+
+                3.2 TWO WAY BINDING  
+
+                    data flow in two directions -import formsModule in AppModule-
+                    syntax:[(ngModel)]="variablename"
+                     
+                    set  name property of the tag if we used ngModel inside a form tag
+                    
+  
+
+          4. App routing module- To set path for an html page
+         
+          5. Dependency Injection- to communicate data between class/component
+         
+          6. Angular services - to keep redundant code
+    
+          7. ngSubmit - to submit an entire form
+
+          8. angular directives: to manipulate DOM
+             8.1 component directives
+             8.2 structural directives(cirtain condition based...add , remove tag)
+                 8.2.1 ngIf -syntax- *ngIf="condition"
+                 8.2.2 ngSwitch
+                 8.2.3 ngFor
+             8.3 Attribute directives- to apply set of style to html
+                 8.3.1   in build- ngClass 
+                 8.3.2   user defined-   
+          9. angular forms
+              9.1 template driven angular form -first design the html page
+              9.2 model driven angular forms - first design the model in ts file
+                 9.2.1 Reactive forms- add validation to the forms-ReactiveFormsModule
+                       {form group-form builder class,form array,form control name}
+
+
+
+
+
+
+
+
+Animation -  
+
+
+
+
+
+ng build --prod    dist created (open)
+npm i --g http-server 
+                   
+
